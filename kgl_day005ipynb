@@ -1,0 +1,627 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "planets\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Earth', 'Jupiter', 'Mars', 'Mercury', 'Neptune', 'Saturn', 'Uranus', 'Venus']"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sorted(planets)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "primes = [2, 3, 5, 7]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "17\n",
+      "2\n",
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(sum(primes))\n",
+    "print(min(primes))\n",
+    "print(max(primes))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0\n"
+     ]
+    }
+   ],
+   "source": [
+    "x=12\n",
+    "print(x.imag)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "c = 12 + 3j\n",
+    "print(c.imag)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune']"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "planets\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Mercury',\n",
+       " 'Venus',\n",
+       " 'Earth',\n",
+       " 'Mars',\n",
+       " 'Jupiter',\n",
+       " 'Saturn',\n",
+       " 'Uranus',\n",
+       " 'Neptune',\n",
+       " 'Pluto']"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "planets.append('Pluto')\n",
+    "planets"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "planets.index('Earth')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "'Pluto' in planets"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "alejandro\n",
+      "alejandro\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "def select_second(L):\n",
+    "    \"\"\"Return the second element of the given list. If the list has no second\n",
+    "    element, return None.\n",
+    "    \"\"\"\n",
+    "    if len(L)<2:\n",
+    "        return None\n",
+    "    return L[1]\n",
+    "\n",
+    "L1=['mario','alejandro','rivillas']\n",
+    "L2=['mario','alejandro']\n",
+    "L3=[\"mario\"]\n",
+    "\n",
+    "print(select_second(L1))\n",
+    "print(select_second(L2))\n",
+    "print(select_second(L3))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "team_0=['coach_0','captain_0','player1_0','player2_0','player3_0']\n",
+    "team_1=['coach_1','captain_1','player1_1','player2_1','player3_1']\n",
+    "team_2=['coach_2','captain_2','player1_2','player2_2','player3_2']\n",
+    "teams=[team_0,team_1,team_2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[['coach_0', 'captain_0', 'player1_0', 'player2_0', 'player3_0'],\n",
+       " ['coach_1', 'captain_1', 'player1_1', 'player2_1', 'player3_1'],\n",
+       " ['coach_2', 'captain_2', 'player1_2', 'player2_2', 'player3_2']]"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "teams"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'captain_2'"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def losing_team_captain(teams):\n",
+    "    \"\"\"Given a list of teams, where each team is a list of names, return the 2nd player (captain)\n",
+    "    from the last listed team\"\"\"\n",
+    "    return teams[-1][1]\n",
+    "\n",
+    "losing_team_captain(teams)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['racer4', 'racer2', 'racer3', 'racer1']"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def purple_shell(racers):\n",
+    "    \"\"\"Given a list of racers, set the first place racer (at the front of the list) to last\n",
+    "    place and vice versa.\"\"\"\n",
+    "    racers[0],racers[-1]=racers[-1],racers[0]\n",
+    "    return racers\n",
+    "    \n",
+    "    \n",
+    "    \n",
+    "racers=[\"racer1\",\"racer2\",\"racer3\",\"racer4\"]\n",
+    "purple_shell(racers)\n",
+    "racers"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "party_attendees = ['Adela', 'Fleda', 'Owen', 'May', 'Mona', 'Gilbert', 'Ford']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n",
+      "['Mona', 'Gilbert']\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def fashionably_late(arrivals, name):\n",
+    "    \"\"\"Given an ordered list of arrivals to the party and a name, return whether the guest with that\n",
+    "    name was fashionably late.    \n",
+    "    \"\"\"\n",
+    "    index_start=round(len(arrivals)/2)\n",
+    "    #print(index_start)\n",
+    "    #print(arrivals[index_start:-1])\n",
+    "    if (name in arrivals[index_start:-1]):\n",
+    "        return True\n",
+    "    return False\n",
+    "\n",
+    "    #test=arrivals.index(name)\n",
+    "    #print(test)\n",
+    "    #if( test >= (len(arrivals)/2) and test < len(arrivals)-1):\n",
+    "    #    return True\n",
+    "    #else:\n",
+    "    #    return False\n",
+    "\n",
+    "party_attendees = ['Adela', 'Fleda', 'Owen', 'May', 'Mona', 'Gilbert', 'Ford']\n",
+    "fashionably_late(party_attendees, 'Ford',)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def has_lucky_number(nums):\n",
+    "    \"\"\"Return whether the given list of numbers is lucky. A lucky list contains\n",
+    "    at least one number divisible by 7.\"\"\"\n",
+    "    lucky_list=[]\n",
+    "    for num in numbers:   \n",
+    "        if ((num % 7) == 0):\n",
+    "            lucky_list.append(num)      \n",
+    "    return len(lucky_list)>0    \n",
+    "    \n",
+    "    \n",
+    "#def has_lucky_number(nums):\n",
+    "#    return any([num % 7 == 0 for num in nums])\n",
+    "\n",
+    "\n",
+    "numbers=[1,13,21,24,42]\n",
+    "has_lucky_number(numbers)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[False, False, True, True]"
+      ]
+     },
+     "execution_count": 64,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def elementwise_greater_than(L, thresh):\n",
+    "    \"\"\"Return a list with the same length as L, where the value at index i is \n",
+    "    True if L[i] is greater than thresh, and False otherwise.\n",
+    "    \n",
+    "    >>> elementwise_greater_than([1, 2, 3, 4], 2)\n",
+    "    [False, False, True, True] \"\"\"\n",
+    "    results=[]\n",
+    "    for number in L:\n",
+    "            results.append(number>thresh)\n",
+    "    return results\n",
+    "            \n",
+    "    \n",
+    "numbers=[1, 2, 3, 4]\n",
+    "elementwise_greater_than(numbers, 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[False, False, True, True]"
+      ]
+     },
+     "execution_count": 63,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def elementwise_greater_than(L, thresh):\n",
+    "    \"\"\"Return a list with the same length as L, where the value at index i is \n",
+    "    True if L[i] is greater than thresh, and False otherwise.\n",
+    "    \n",
+    "    >>> elementwise_greater_than([1, 2, 3, 4], 2)\n",
+    "    [False, False, True, True]\n",
+    "    \"\"\"\n",
+    "    pass\n",
+    "    return ([num>thresh for num in L])\n",
+    "    \n",
+    "numbers=[1, 2, 3, 4]\n",
+    "elementwise_greater_than(numbers, 2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 67,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def menu_is_boring(meals):\n",
+    "    \"\"\"Given a list of meals served over some period of time, return True if the\n",
+    "    same meal has ever been served two days in a row, and False otherwise.\n",
+    "    \"\"\"\n",
+    "    i=0\n",
+    "    while i < (len(meals)-1):\n",
+    "         if (meals[i] == meals[i+1]):\n",
+    "            return True\n",
+    "         i+=1\n",
+    "    return False\n",
+    "    \n",
+    "#     for i in range(len(meals)-1):\n",
+    "#         if meals[i] == meals[i+1]:\n",
+    "#             return True\n",
+    "#     return False\n",
+    "\n",
+    "    \n",
+    "#meals=['eggs','meat','rice','potatoes','potatoes']\n",
+    "meals=[]\n",
+    "menu_is_boring(meals)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1.5\n",
+      "1.5\n",
+      "0\n",
+      "1.5\n",
+      "5\n",
+      "6.5\n",
+      "0\n",
+      "6.5\n",
+      "1.5\n",
+      "8.0\n",
+      "1.5\n",
+      "9.5\n",
+      "0\n",
+      "9.5\n",
+      "0\n",
+      "9.5\n",
+      "0\n",
+      "9.5\n",
+      "0\n",
+      "9.5\n"
+     ]
+    },
+    {
+     "data": {
+      "text/plain": [
+       "-0.05"
+      ]
+     },
+     "execution_count": 75,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def estimate_average_slot_payout(n_runs):\n",
+    "    \"\"\"Run the slot machine n_runs times and return the average net profit per run.\n",
+    "    Example calls (note that return value is nondeterministic!):\n",
+    "    >>> estimate_average_slot_payout(1)\n",
+    "    -1\n",
+    "    >>> estimate_average_slot_payout(1)\n",
+    "    0.5\n",
+    "    \"\"\"\n",
+    "# option 1\n",
+    "#    i=0\n",
+    "#    total=[]\n",
+    "    \n",
+    "#    while (i < n_runs):\n",
+    "#        total.append(play_slot_machine())\n",
+    "#        i+=1\n",
+    "#    print(sum(total))\n",
+    "#    print(len(total))\n",
+    "#    print(total)\n",
+    "#    return (sum(total)-n_runs)/len(total)\n",
+    "\n",
+    "# option 2\n",
+    "    total=[]\n",
+    "    for i in range(n_runs):\n",
+    "        total.append(play_slot_machine())  # requires kaggle.com interface\n",
+    "        #print(i,total)\n",
+    "    print(sum(total))\n",
+    "    print(n_runs)\n",
+    "    return (sum(total)-n_runs)/n_runs\n",
+    "\n",
+    "print(estimate_average_slot_payout(1000))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
