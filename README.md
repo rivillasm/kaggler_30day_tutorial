@@ -8,4 +8,6 @@
 * day07
 * day08
 * day09
-*day10- Decision Trees and Random Forest
+* day10 - Decision Trees and Random Forest
+* day11
+* day12 - Hot-Encoding categorical variables
