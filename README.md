@@ -1,13 +1,13 @@
-# kaggler_30day_tutorial
-* day01
-* day02
-* day03
-* day04
-* day05
-* day06
-* day07
-* day08
-* day09
-* day10 - Decision Trees and Random Forest
-* day11
-* day12 - Hot-Encoding categorical variables
+day 01
+day 02
+day 03
+day 04
+day 05
+day 06
+day 07
+day 08
+day 09
+day 10  random forest , overfitting/underfitting
+day 11  results validation, MAE
+day 12  missing values, imputation, onehotencoder 
+day 13  pipelines
