@@ -12,3 +12,4 @@ day 11  results validation, MAE
 day 12  missing values, imputation, onehotencoder 
 day 13  pipelines
 day 14
+day 15
